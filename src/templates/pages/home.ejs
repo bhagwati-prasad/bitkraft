@@ -1,0 +1,23 @@
+<section class="hero" data-feature="hero">
+  <div class="hero-container">
+    <h1 class="hero-title"><%= data.title %></h1>
+    <p class="hero-subtitle"><%= data.subtitle %></p>
+    
+    <div class="features-grid">
+      <% data.features.forEach(function(feature) { %>
+        <div class="feature-card">
+          <span class="feature-icon">✓</span>
+          <span class="feature-name"><%= feature %></span>
+        </div>
+      <% }); %>
+    </div>
+    
+    <a href="/about" class="cta-button">Learn More</a>
+  </div>
+</section>
+
+<footer data-feature="footer" class="footer">
+  <div class="footer-container">
+    <p>&copy; 2026 BitKraft Framework. MIT License.</p>
+  </div>
+</footer>

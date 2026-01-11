@@ -1,0 +1,49 @@
+{
+  "name": "@bitkraft/framework",
+  "version": "1.0.0-alpha.1",
+  "description": "Hybrid SSR + SPA web framework built on Node.js and Vite",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "node src/server/index.js",
+    "start": "NODE_ENV=production node src/server/index.js",
+    "build": "echo 'Phase 2 will implement Vite build'",
+    "test": "vitest",
+    "test:unit": "vitest run --coverage",
+    "test:watch": "vitest watch",
+    "test:ui": "vitest --ui",
+    "test:e2e": "playwright test"
+  },
+  "keywords": [
+    "ssr",
+    "spa",
+    "hybrid",
+    "framework",
+    "vite",
+    "web-framework",
+    "no-hydration"
+  ],
+  "author": "BitKraft Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhagwati-prasad/bitkraft.git"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "vitest": "^1.2.0",
+    "@vitest/ui": "^1.2.0",
+    "@vitest/coverage-v8": "^1.2.0",
+    "@playwright/test": "^1.40.0",
+    "typescript": "^5.3.0",
+    "@types/node": "^20.10.0",
+    "@types/express": "^4.17.21",
+    "jsdom": "^23.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+<section class="about" data-feature="team">
+  <div class="about-container">
+    <h1 class="about-title"><%= data.title %></h1>
+    <p class="about-description"><%= data.description %></p>
+    
+    <h2 class="principles-heading">Core Principles</h2>
+    <ul class="principles-list">
+      <% data.principles.forEach(function(principle) { %>
+        <li class="principle-item"><%= principle %></li>
+      <% }); %>
+    </ul>
+    
+    <a href="/" class="back-button">Back to Home</a>
+  </div>
+</section>
+
+<footer data-feature="footer" class="footer">
+  <div class="footer-container">
+    <p>&copy; 2026 BitKraft Framework. MIT License.</p>
+  </div>
+</footer>
